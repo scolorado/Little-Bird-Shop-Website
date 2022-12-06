@@ -9,9 +9,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
-    <nav id="nav" class="navbar navbar-expand-sm navbar-dark">
+    <nav id="nav" class="navbar navbar-expand-sm navbar-dark  fixed-top">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -22,13 +22,13 @@
                 <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Toys</a>
+                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Toys</a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Blocks</a></li>
-                  <li><a class="dropdown-item" href="#">Boat</a></li>
-                  <li><a class="dropdown-item" href="#">Car</a></li>
-                  <li><a class="dropdown-item" href="#">Plane</a></li>
-                  <li><a class="dropdown-item" href="#">Train</a></li>
+                  <li><a class="dropdown-item" href="#blocks">Blocks</a></li>
+                  <li><a class="dropdown-item" href="#boat">Boat</a></li>
+                  <li><a class="dropdown-item" href="#car">Car</a></li>
+                  <li><a class="dropdown-item" href="#plane">Plane</a></li>
+                  <li><a class="dropdown-item" href="#train">Train</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -39,45 +39,32 @@
         </div>
       </nav>
 
-      <div class="container">
-        <div class="p-1 rounded">
-          <div class="col-md-4">
-            <img src="little bird logo\Main Logo.png" class="logo" alt="Main Logo">
-          </div>
-          <div class="col-md-8">
-            <h1>Our Story</h1>
-              <p>Our handcrafted classic, wooden toys  are designed to bring out that slowness in your home. From Planes, trains, automobiles and boats, playsets, all of our wooden toys are designed to spark imagination. The going may be a little slower, but oh the things you’ll see along the way!</p>
-              <p>Since 2018, Little Bird Toys has delighted families looking for quality children’s toys.  Our collection of heirloom quality products are built to stand the test of time and to be enjoyed from sibling to sibling and generation to generation.
-              </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
+    
+      <div id="blocks" class="container-fluid" style="padding:50px;">
         <div id="toys" class="mt-4 p-5 rounded">
-          <h1>Blocks</h1> 
+          <h1>Blocks</h1>
         </div>
       </div>
 
-      <div class="container">
+      <div id="boat" class="container-fluid">
         <div id="toys" class="mt-4 p-5 rounded">
           <h1>Boat</h1> 
         </div>
       </div>
 
-      <div class="container">
+      <div id="car" class="container-fluid">
         <div id="toys" class="mt-4 p-5 rounded">
           <h1>Car</h1> 
         </div>
       </div>
 
-      <div class="container">
+      <div id="plane" class="container-fluid">
         <div id="toys" class="mt-4 p-5 rounded">
           <h1>Plane</h1> 
         </div>
       </div>
 
-      <div class="container">
+      <div id="train" class="container-fluid">
         <div id="toys" class="mt-4 p-5 rounded">
           <h1>Train</h1> 
         </div>
@@ -122,6 +109,15 @@
         </form>
       </div>
 
+
+      <script>
+        $(document).ready(function () {
+            $("ul.navbar-nav > li").click(function (e) {
+             $("ul.navbar-nav > li").removeClass("active");
+             $(this).addClass("active");
+              });
+          });
+      </script>
 </body>
 </html>
             

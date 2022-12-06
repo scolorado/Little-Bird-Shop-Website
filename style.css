@@ -2,9 +2,10 @@ body{
     background-color: #feeadc;
 }
 #nav{
+    color:white;
     background-color:#533f3e ;
-    color: white;
 }
+
 .logo{
     width: 90%;
     height:90%;
