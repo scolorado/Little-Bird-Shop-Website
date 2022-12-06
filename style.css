@@ -1,4 +1,14 @@
+body{
+    background-color: #feeadc;
+}
 #nav{
     background-color:#533f3e ;
     color: white;
+}
+.logo{
+    width: 90%;
+    height:90%;
+}
+#toys{
+    background-color: #cba489;
 }
