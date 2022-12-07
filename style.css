@@ -5,11 +5,10 @@ body{
     color:white;
     background-color:#533f3e ;
 }
-
-.logo{
-    width: 90%;
-    height:90%;
-}
 #toys{
     background-color: #cba489;
+}
+#mainLogo{
+    width: 100%;
+    height:100%;
 }
