@@ -21,3 +21,20 @@ body{
 #footer{
     background-color:#533f3e ;
 }
+#mail{
+    background-color: #f79559;
+}
+.dropdown-item:active{
+    background-color: #f79559;
+}
+.dropdown-item:cue{
+    background-color: #f79559;
+}
+#title{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+}
+#reg{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
